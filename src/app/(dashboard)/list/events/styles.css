@@ -1,0 +1,117 @@
+/* FullCalendar Styles */
+.fc {
+  width: 100%;
+  height: 100%;
+  background: white;
+  font-family: inherit;
+  font-size: 0.875rem;
+}
+
+.fc .fc-daygrid-day {
+  height: 70px !important;
+}
+
+.fc .fc-daygrid-day-frame {
+  min-height: 70px !important;
+}
+
+.fc .fc-daygrid-day-events {
+  margin-top: 2px;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 1.5em;
+  padding: 0 1rem;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.fc .fc-button {
+  background-color: #CFCEFF;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+.fc .fc-button:hover {
+  background-color: #F1F0FF;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  background-color: #F1F0FF;
+  border-color: transparent;
+  color: #000;
+}
+
+.fc .fc-button-primary:focus {
+  box-shadow: none;
+}
+
+.fc-theme-standard td, 
+.fc-theme-standard th,
+.fc-theme-standard .fc-scrollgrid {
+  border-color: #f1f1f1;
+}
+
+/* Event Types */
+.event-type-exam { 
+  background-color: #fecaca !important; 
+  border-color: #fecaca !important;
+  color: #991b1b !important;
+}
+
+.event-type-holiday { 
+  background-color: #bbf7d0 !important; 
+  border-color: #bbf7d0 !important;
+  color: #166534 !important;
+}
+
+.event-type-meeting { 
+  background-color: #bfdbfe !important; 
+  border-color: #bfdbfe !important;
+  color: #1e40af !important;
+}
+
+.event-type-announcement { 
+  background-color: #fef08a !important; 
+  border-color: #fef08a !important;
+  color: #854d0e !important;
+}
+
+.fc-event {
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 1px 0;
+  font-size: 0.875rem;
+  transition: transform 0.15s ease-in-out;
+}
+
+.fc-event:hover {
+  transform: scale(1.02);
+}
+
+.fc-daygrid-event-dot {
+  display: none;
+}
+
+.calendar-tooltip {
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.calendar-tooltip.hidden {
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .fc .fc-toolbar-title {
+    font-size: 1.5rem;
+  }
+}
