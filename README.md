@@ -1,22 +1,73 @@
-# Lama Dev School Management Dashboard
+# School Management System
+
+A comprehensive school management system built with Next.js, TypeScript, Prisma, and Tailwind CSS.
+
+## Features
+
+- **Student Management**: Complete student admission, records, and academic tracking
+- **Teacher Management**: Teacher profiles, subject assignments, and class management
+- **Class Management**: Classroom organization and student assignments
+- **Subject Management**: Subject creation and teacher assignments
+- **Dashboard**: Real-time statistics and recent activities
+- **File Uploads**: Student photos and document management
+- **Search & Filter**: Advanced search capabilities across all modules
+- **Responsive Design**: Mobile-friendly interface
+
+## Tech Stack
+
+- **Frontend**: Next.js 14, TypeScript, Tailwind CSS
+- **Backend**: Next.js API routes, Prisma ORM
+- **Database**: PostgreSQL (configurable for MySQL/SQLite)
+- **UI Components**: Radix UI, Lucide React
+- **Forms**: React Hook Form, Zod validation
+- **File Upload**: Support for Cloudinary/AWS S3
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18+ 
+- PostgreSQL (or MySQL/SQLite)
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd school-management-system
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env
+   ```
+   
+   Edit `.env` with your database and configuration details.
+
+4. **Set up the database**
+   ```bash
+   # Generate Prisma client
+   npx prisma generate
+   
+   # Run database migrations
+   npx prisma migrate dev --name init
+   
+   # (Optional) Seed the database
+   npx prisma db seed
+   ```
+
+5. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) to view the application.
 
 ## Learn More
 
